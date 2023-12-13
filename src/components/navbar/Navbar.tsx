@@ -19,7 +19,7 @@ class NavBar extends Component<{}, NavBarState> {
 
   render() {
    return(
-    <Navbar expand="lg" className="bg-body-tertiary shadow-sm">
+    <Navbar expand="lg" className="bg-body-tertiary shadow">
         <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
