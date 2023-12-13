@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=Poppins:wght@400;700&family=Raleway:wght@300;900&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&family=M+PLUS+Rounded+1c:wght@700&family=Poppins:wght@400;700&family=Raleway:wght@300;900&family=Rowdies:wght@300&display=swap');
+
+h1{
+    margin: 0 !important;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #001F3F !important;
+}
+
+.my-hello, .my-name {
+    font-weight: bold;
+}
+
+.my-hello {
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+
+.my-name {
+    color: #FF7700;
+}
+
+.initial-name {
+    font-size: 2.5rem;
+}
+
+.my-position {
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.actual-position {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+@media (max-width: 576px) {
+  .fs-sm-3{
+    font-size: 3rem;
+  }
+  .my-hello {
+    font-size: 2.5rem;
+  }
+  .initial-name {
+    font-size: 2.5rem;
+  }
+  .my-position {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .fs-md-4 {
+    font-size: 7rem;
+  }
+}
