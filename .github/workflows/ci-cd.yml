@@ -9,7 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:            
+      - name: Configure Git
+        uses: actions/setup-git@v2
+        with:
+          user-email: magtutofrancis@gmail.com
+          user-name: kingfrancis03
+
       - name: Checkout Repository
         uses: actions/checkout@v2
 
@@ -20,12 +26,6 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-      
-      - name: Configure Git
-        uses: actions/setup-git@v2
-        with:
-          user-email: magtutofrancis@gmail.com
-          user-name: kingfrancis03
 
       - name: Build
         run: CI=false npm run deploy
