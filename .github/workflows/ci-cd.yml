@@ -9,15 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:            
+    steps:   
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+     
       - name: Configure Git
         run: |
           git config --global user.email "magtutofrancis@gmail.com"
           git config --global user.name "kingfrancis03"
           git remote set-url origin "https://github.com/kingfrancis03/myportfolio.git"
-
-      - name: Checkout Repository
-        uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
