@@ -12,12 +12,11 @@ jobs:
     steps:   
       - name: Checkout Repository
         uses: actions/checkout@v2
-     
-      - name: Configure Git
+
+      - name: Debug
         run: |
-          git config --global user.email "magtutofrancis@gmail.com"
-          git config --global user.name "kingfrancis03"
-          git remote set-url origin "https://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@github.com/kingfrancis03/myportfolio.git"
+          echo "Current User: $(whoami)"
+          echo "GitHub Token: ${{ secrets.GITHUB_TOKEN }}"
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
