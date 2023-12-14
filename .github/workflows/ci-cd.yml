@@ -18,6 +18,12 @@ jobs:
           echo "Current User: $(whoami)"
           echo "GitHub Token: ${{ secrets.GITHUB_TOKEN }}"
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "magtutofrancis@gmail.com"
+          git config --global user.name "kingfrancis03"
+          git remote set-url origin "https://${{ secrets.GITHUB_TOKEN }}"@github.com/kingfrancis03/myportfolio.git"
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
