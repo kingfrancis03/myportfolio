@@ -24,10 +24,10 @@ class NavBar extends Component<{}, NavBarState> {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav variant="underline" className="ms-auto">
-            <Nav.Link as={NavLink} to="/myportfolio" className="nav-link">
+            <Nav.Link as={NavLink} to="/" className="nav-link">
                 Home
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/myportfolio/about" className="nav-link">
+            <Nav.Link as={NavLink} to="/about" className="nav-link">
                 About Me
             </Nav.Link>
             </Nav>
