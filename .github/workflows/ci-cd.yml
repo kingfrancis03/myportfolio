@@ -11,10 +11,10 @@ jobs:
 
     steps:            
       - name: Configure Git
-        uses: actions/setup-git@v2
-        with:
-          user-email: magtutofrancis@gmail.com
-          user-name: kingfrancis03
+        run: |
+          git config --global user.email "magtutofrancis@gmail.com"
+          git config --global user.name "kingfrancis03"
+          git remote set-url origin "https://github.com/kingfrancis03/myportfolio.git"
 
       - name: Checkout Repository
         uses: actions/checkout@v2
