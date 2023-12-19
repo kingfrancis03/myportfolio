@@ -1,6 +1,6 @@
 // Import the necessary modules from React
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from 'pages/home'
 import About from 'pages/about';
 import NavBar from 'components/navbar/Navbar';
