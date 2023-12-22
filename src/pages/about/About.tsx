@@ -21,14 +21,15 @@ class About extends Component<{}, AboutState> {
   }
 
   handleDownloadResume(): void {
-    // Assuming your resume file is named 'resume.pdf' in the 'assets' folder
     const resumeFilePath = myResume;
-    
-    // Constructing the full URL to the resume file
-    const resumeFileURL = process.env.PUBLIC_URL + resumeFilePath;
+    const resumeFileURL = resumeFilePath;
+    const downloadLink = document.createElement('a');
 
-    // Opening a new window to trigger the download
-    window.open(resumeFileURL, '_blank');
+    downloadLink.href = resumeFileURL;
+    downloadLink.download = 'francis_magtuto_resume.pdf';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   };
 
   render() {
@@ -57,7 +58,6 @@ class About extends Component<{}, AboutState> {
                     <Accordion.Body>
                       <p>&emsp;You can call me <b>Francis</b>. I'm a son, grandson, brother, uncle, churchmate, and a friend. I’m a proud follower and disciple of Jesus Christ. </p>
                       <p>&emsp;I love learning things that interest me. I'm kind of a geek when it comes to science and other stuff, but I'm not a genius like Sheldon from "The Big Bang Theory." If something catches my interest, I'll research and think about it. I enjoy thinking, which is why I chose programming. Coding, for me, is like solving a puzzle—addressing problems and finding solutions. However, I'm not exceptionally smart; I just enjoy the process of thinking. </p>
-                      <p>&emsp;I love learning things that interest me. I'm kind of a geek when it comes to science and other stuff, but I'm not a genius like Sheldon from "The Big Bang Theory." If something catches my interest, I'll research and think about it. I enjoy thinking, which is why I chose programming. Coding, for me, is like solving a puzzle—addressing problems and finding solutions. However, I'm not exceptionally smart; I just enjoy the process of thinking. </p>
                       <div className="social-icons">
                         <a href="https://www.facebook.com/kuyafrancis.magtuto" target="_blank" rel="noopener noreferrer">
                           <FaFacebook />
@@ -65,7 +65,7 @@ class About extends Component<{}, AboutState> {
                         <a href="https://www.instagram.com/kingdawba/" target="_blank" rel="noopener noreferrer">
                           <FaInstagram />
                         </a>
-                        <a href="https://twitter.com/KuysFrancis" target="_blank" rel="noopener noreferrer">
+                        <a href="https://twitter.com/KuysFrancis"  target="_blank" rel="noopener noreferrer">
                           <FaTwitter />
                         </a>
                       </div>
