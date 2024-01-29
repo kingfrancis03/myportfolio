@@ -27,6 +27,9 @@ class NavBar extends Component<{}, NavBarState> {
             <Nav.Link as={NavLink} to="/" className="nav-link">
                 Home
             </Nav.Link>
+            <Nav.Link as={NavLink} to="/skills" className="nav-link">
+                My Skills
+            </Nav.Link>
             <Nav.Link as={NavLink} to="/about" className="nav-link">
                 About Me
             </Nav.Link>

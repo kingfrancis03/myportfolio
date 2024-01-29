@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from 'pages/home'
 import About from 'pages/about';
+import Skills from 'pages/skills';
 import NavBar from 'components/navbar/Navbar';
 import Footer from 'components/footer';
 
@@ -16,7 +17,8 @@ class App extends Component {
           <div>
             <Routes>
               <Route path="/" element={ <Home />} />
-              <Route path="/about" element={ <About />} />  
+              <Route path="/about" element={ <About />} /> 
+              <Route path="/skills" element={ <Skills />} /> 
             </Routes>
           </div>
           <Footer />
