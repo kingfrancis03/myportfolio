@@ -1,0 +1,43 @@
+[
+    {
+      "logoImage": "pythonLogo",
+      "title": "Python",
+      "skillDetails": {
+        "years": "> 3",
+        "tools": "Used of Flask, Flask-sqlalchemy, Flask-restx, Flask-APScheduler. Back-end development"
+      }
+    },
+    {
+      "logoImage": "htmlCSSLogo",
+      "title": "HTML and CSS",
+      "skillDetails": {
+        "years": "> 2",
+        "tools": "Front-end Development"
+      }
+    },
+    {
+      "logoImage": "javaScriptLogo",
+      "title": "JavaScript",
+      "skillDetails": {
+        "years": "> 2",
+        "tools": "Vanilla, Front-end Development"
+      }
+    },
+    {
+      "logoImage": "mySqlLogo",
+      "title": "MySql",
+      "skillDetails": {
+        "years": "> 3",
+        "tools": "Relational Databases, Filtering, Back-end development"
+      }
+    },
+    {
+      "logoImage": "VueLogo",
+      "title": "VueJS",
+      "skillDetails": {
+        "years": "> 2",
+        "tools": "Used of Nuxt Framework Integrated in TypeScript"
+      }
+    }
+  ]
+  

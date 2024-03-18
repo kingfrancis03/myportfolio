@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 import coffePhoto from '../../assets/coffee.jpg';
 import Button from 'react-bootstrap/Button';
-import myResume from '../../assets/resume.pdf';
+import myResume from '../../assets/CV-Francis-Magtuto.pdf';
 
 import './About.css'
 
@@ -26,7 +26,7 @@ class About extends Component<{}, AboutState> {
     const downloadLink = document.createElement('a');
 
     downloadLink.href = resumeFileURL;
-    downloadLink.download = 'francis_magtuto_resume.pdf';
+    downloadLink.download = 'francis_magtuto_cv.pdf';
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
@@ -50,7 +50,7 @@ class About extends Component<{}, AboutState> {
                     <Accordion.Header>Who am I Professionally?</Accordion.Header>
                     <Accordion.Body>
                       <p>&emsp;My Fullname is <b>Francis Oscar Timbol Magtuto</b>. I'm a Web Developer with a primary focus on <b>back-end APIs</b>(Python). Although my expertise lies in back-end development, I am also proficient in <b>front-end development</b>(VueJS) and handle those tasks when they are easy and no other developers are available. In my role, my main responsibility is to create REST APIs that <b>retrieve data from databases or other third-party APIs</b> and process it to meet the front-end requirements. I handle <b>data validation and ingestion</b> to ensure that the system's needs are met. Additionally, I am responsible for <b>debugging and investigating any bugs or errors</b> that may arise. In summary, my tasks primarily revolve around back-end development and coding; however, I also have the capability to handle front-end tasks when necessary.</p>
-                      <Button variant="primary" onClick={this.handleDownloadResume}>My Resume</Button>
+                      <Button variant="primary" onClick={this.handleDownloadResume}>Download my CV</Button>
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item eventKey="1">
